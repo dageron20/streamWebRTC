@@ -1,0 +1,92 @@
+.configuration {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 4px;
+
+  &-settings {
+    width: 300px;
+    height: 60px;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    bottom: 56px;
+
+
+    &-button {
+      height: 32px;
+      width: 32px;
+      position: absolute;
+      left: 260px;
+      bottom: 12px;
+    }
+
+    &-window {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+
+      & span {
+        //width: 242px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-left: 12px;
+        align-items: center;
+        font-size: 14px;
+      }
+
+      & input {
+        height: 32px;
+        width: 125px;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        flex-grow: 1;
+        margin: 0 16px;
+        background: rgba(255, 255, 255, 0.12);
+        border: 1px solid #C8CACC;
+        padding-left: 12px;
+        outline: none;
+        color: white;
+      }
+
+      & button {
+        width: 80px;
+        height: 32px;
+        margin-right: 12px;
+        cursor: pointer;
+        background-color: #efefef;
+        border-radius: 4px;
+
+        &:hover {
+          cursor: pointer;
+          transition: 0.6s;
+        }
+      }
+    }
+  }
+}
+
+::-webkit-input-placeholder {
+  color: blue;
+  opacity: .5;
+}
+:-ms-input-placeholder {
+  color: blue;
+  opacity: .5;
+}
+::-moz-placeholder {
+  color: blue;
+  opacity: 1;
+}
+:-moz-placeholder {
+  color: blue;
+  opacity: 1;
+}
+
+
